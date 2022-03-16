@@ -10,8 +10,9 @@ Pull settings.db from phone using 'adb pull /data/data/com.android.providers.set
 # Step 3
 Pull password hash using 'adb pull /data/system/password.key'. This contains MD5 & SHA1 hashes.
 
-# Step 4
-Pull device password policy using 'adb pull /data/system/device_policies.xml'. This contains PIN length, complexity etc.
+# usage:
+    - python3 androidpincrack.py <salt> <pin length>
+  - example
+    - `` python3 androidpincrack.py 34526724572864372452478 4 ``
 
-# Step 5
-Run the python script with files from steps 1-4 and .py script in the same folder and it will crack the password.
+''Note password.key should be in the same file''
