@@ -12,7 +12,7 @@ if name_exists:
     salt=(int(name_exists[0]))
     hexsalt=binascii.hexlify((struct.pack('>q',(int(salt))))) 
 else:
-    print("does not exist").
+    print("does not exist")
 
 
 
