@@ -6,7 +6,7 @@ import binascii
 
 
   
-name_exists = sys.argv[1]
+name_exists = [sys.argv[1], '1']
 
 if name_exists:
     salt=(int(name_exists[0]))
